@@ -158,7 +158,7 @@ function Welcome() {
   return (
     <div className="welcome">
       <h1 className="welcome-note">
-        Welcome to <span className="board"> DATA BOARD 📟</span>
+        Welcome to <span className="board">FRIEND BOOK</span>
       </h1>
     </div>
   );
