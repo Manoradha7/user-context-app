@@ -10,6 +10,7 @@ import { EditUser } from "./EditUser";
 import { UsersList } from "./Users";
 import { createContext } from "react";
 
+//creating a context 
 export const context = createContext();
 
 export default function App() {
@@ -100,6 +101,9 @@ export default function App() {
 
   const [users, setUsers] = useState(usersList);
   return (
+    
+//     providing components in the parent component for giving values to the child components
+    
     <context.Provider value={{ users, setUsers }}>
       <div className="App">
         <AppBar position="static" color="success">
