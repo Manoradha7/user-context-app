@@ -6,6 +6,8 @@ import { context } from "./App.js";
 import { useContext } from "react";
 
 export function AddUser() {
+  
+//   use hooks for set values to the variables
   const [name, setName] = useState("");
   const [pic, setPic] = useState("");
   const [EmailId, setEmail] = useState("");
@@ -15,6 +17,7 @@ export function AddUser() {
 
   const history = useHistory();
 
+//   adding the  user
   const addUser = () => {
     const newUser = {
       name,
